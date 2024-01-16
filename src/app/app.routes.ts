@@ -15,6 +15,9 @@ import { CategoryService } from './services/category.service';
 import { CategoryComponent } from './admin/components/category/category.component';
 import { ProductComponent } from './admin/components/product/product.component';
 import { PhotoComponent } from './admin/components/photo/photo.component';
+import { AppointmentComponent } from './admin/components/appointment/appointment.component';
+import { OrderComponent } from './admin/components/order/order.component';
+import { LeaveComponent } from './admin/components/leave/leave.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -31,8 +34,11 @@ export const routes: Routes = [
             {path:'list-working-ranges/:userId',component:UserListWorkingRangeComponent},
         ]},
         {path:'services',component:ServiceComponent},
+        {path:'leaves',component:LeaveComponent},
+        {path:'appointments',component:AppointmentComponent},
         {path:'categories',component:CategoryComponent},
         {path:'products',component:ProductComponent},
         {path:'gellery',component:PhotoComponent},
+        {path:'orders',component:OrderComponent},
     ]}
 ];

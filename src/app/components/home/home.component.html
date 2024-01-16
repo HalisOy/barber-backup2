@@ -1,2 +1,119 @@
-<p>{{'home.description'|translate:({name:'ali'})}}</p>
-<button class="btn btn-success" (click)="changeLanguage()">Dil değiştir</button>
+<!-- <p>{{'home.description'|translate:({name:'ali'})}}</p>
+<button class="btn btn-success" (click)="changeLanguage()">Dil değiştir</button> -->
+
+
+  <div class="row mx-auto">
+    <button
+      class="navbar-toggler d-md-none collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu"
+      aria-controls="sidebarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <nav
+      id="sidebarMenu"
+      class="col-md-4 col-lg-3 d-md-block sidebar " 
+      style="height: 100vh;"
+    >
+      <div
+        class="sidebar-sticky d-flex flex-column justify-content-center align-items-center"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/landing/images/barber-front-logo.png"
+            class="logo-image img-fluid"
+            style="height: 60px; width: 250px;"
+          />
+        </a>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#section_1">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#section_2">Our Story</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#section_3">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#section_4">Price List</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#section_5">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="col-md-8 ms-sm-auto col-lg-9 p-0">
+      <section
+        class="hero-section d-flex justify-content-center align-items-center"
+        id="section_1"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <h1 class="text-white mb-lg-3 mb-4">
+                <strong>Barber <em>Shop</em></strong>
+              </h1>
+              <p class="text-black">
+                Get the most professional haircut for you
+              </p>
+              <br />
+              <a
+                class="btn btn-warning me-3 smoothscroll mb-2 rounded-pill"
+                href=""
+                [routerLink]="['admin']"
+                style="width: 130px;"
+                >Admin Page</a
+              >
+
+              <a class="btn btn-warning smoothscroll mb-2  rounded-pill" href="#section_3" 
+              style="width: 120px;"
+                >What we do</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="custom-block d-lg-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            src="assets/landing/images/vintage-chair-barbershop.jpg"
+            class="custom-block-image img-fluid"
+            alt=""
+          />
+
+          <h4>
+            <strong class="text-white">Hurry Up! Get good haircut.</strong>
+          </h4>
+
+          <a
+            href="#booking-section"
+            class="smoothscroll btn custom-btn custom-btn-italic mt-3"
+            >Book a seat</a
+          >
+        </div>
+      </section>
+    </div>
+    
+  </div>
+
+  <!-- <div class="row w-100 mx-auto">
+    <div class="col-3 bg-warning h-100">
+      ssd
+    </div>
+    <div class="col-9 bg-danger">
+      s
+    </div>
+  </div> -->

@@ -30,9 +30,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/landing/css/bootstrap-icons.css",
+              "src/assets/landing/css/templatemo-barber-shop.css",
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/datatables.net-dt/css/jquery.dataTables.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/landing/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
